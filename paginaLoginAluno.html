@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>   
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="_css/style.css">
+    <title>Trabalho Personal</title>    
+</head>
+<body>
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+        <ul type="disc">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="catalagodePlanos.html">Planos</a></li>
+           <li><a href="depoimentos.html">Depoimentos</a></li>
+           <li><a href="aplicativo.html">Aplicativo</a></li>
+           <li><a href="treinamentos.html">Treinamentos</a></li>
+           <li><a href="paginaContatopersonal.html">Contato</a></li>
+           <li><a href="paginaLoginAluno.html">Login</a></li>
+   </ul>
+   </nav>
+   <br>
+   <!--login -->
+   <div class=" w3-content w3-padding-64 w3-center" id="login">
+    <h2 class="w3-text-cyan w3-center">Login</h2>
+    <hr style="width:10px w3-center">
+    <div class="w3-center">
+         
+        <img src="IMG/icone_login.jpg" alt="imagem" style="width:10%" 
+          class="w3-circle w3-margin-top  ">
+         </div>
+            <form class="w3-container " action="loginAction.php" method="post">
+                <div class="w3-section">
+                    <label style="font-weight: bold;">Usuário</label>
+                    <input class="w3-input w3-border w3-marginbottom" type="text"
+                        placeholder="Digite o nome" name="txtNome" required>
+                    <label style="font-weight: bold;">Senha</label>
+                    <input class="w3-input w3-border" type="text"
+                        placeholder="Digite a Senha" name="txtSenha" required> <br>
+                    <label class="radio">
+                        <input name="radio" type="radio" checked>
+                        <span>Professor</span>
+                    </label &nbsp>
+
+                    <label class="radio">
+                        <input name="radio" type="radio">
+                        <span>Aluno</span>
+                    </label>
+                    <button class="w3-button w3-block w3-teal w3-section w3-padding"
+                        type="submit">Entrar</button>
+                </div>
+            </form>
+            <br>
+        </div>
+        <!-- Login -->
+    </div>
+</body>

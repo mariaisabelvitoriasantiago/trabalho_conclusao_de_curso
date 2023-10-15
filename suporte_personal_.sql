@@ -60,3 +60,8 @@ CREATE TABLE if not exists aulas_atividade (
   cpf_aluno INT,
   FOREIGN KEY (cpf_aluno) REFERENCES aluno(cpf_aluno)
 );
+
+--Criação de Usuário--
+CREATE USER test@localhost IDENTIFIED BY '12345';
+GRANT ALL PRIVILEGES ON * . * TO test@localhost;
+FLUSH PRIVILEGES;
